@@ -1,0 +1,14 @@
+.welcome-image {
+	filter:blur(0px) grayscale(20%) drop-shadow(8px 8px 10px gray) opacity(70%);
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover; 
+	height: 100vh;
+	width: 100vw;
+	background-image: url("https://c0.wallpaperflare.com/preview/539/217/128/ecommerce-online-store-online-shop-store.jpg");
+}
+
+.to-right{
+    display: flex;
+justify-content: center;
+}

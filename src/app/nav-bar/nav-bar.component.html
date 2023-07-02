@@ -1,0 +1,14 @@
+<div class="row my-3 navbar">
+    <div class="col d-flex justify-content-center">
+        <ul class="d-flex justify-content-center">
+            <li><a href="#" class="link" routerLinkActive="active-link" [routerLinkActiveOptions]="{exact: true}" routerLink="/">Home</a></li>
+            <li *ngIf = "isloggedin" ><a href="#" class="link" routerLinkActive="active-link" routerLink="/order">Order</a></li>
+            <li><a href="#" class="link" routerLinkActive="active-link" routerLink="/vision">Vision</a></li>
+            <li><a href="#" class="link" routerLinkActive="active-link" routerLink="/prize">Prize</a></li>
+            <li><a href="#" class="link" routerLinkActive="active-link" routerLink="/about">About</a></li>
+            <li > <div *ngIf = "!flag ; else fotur"><a href="#" class="link" routerLinkActive="active-link" routerLink="/login">Sign In</a></div>
+            <ng-template  #fotur> <div><a href="#" class="link" routerLinkActive="active-link" routerLink="/login" >{{username}}</a></div></ng-template> </li>
+        </ul>
+    </div>
+</div>
+
